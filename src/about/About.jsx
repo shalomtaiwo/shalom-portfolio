@@ -126,7 +126,7 @@ const About = () => {
 											style={{ borderBottom: "1px solid" }}
 											pb={8}
 										>
-											Technology
+											Others
 										</Title>
 										<ActionsGrid data={techies} />
 									</div>
