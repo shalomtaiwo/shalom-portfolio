@@ -83,7 +83,7 @@ const Portfolio = () => {
 											<img
 												src={item.image}
 												alt={`Portfolio Item ${index + 1}`}
-												style={{ width: "100%" }}
+												className="portfolio-img"
 											/>
 											<Text
 												size="18px"

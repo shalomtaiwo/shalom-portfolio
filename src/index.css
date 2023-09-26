@@ -39,7 +39,6 @@ code {
   font-size: 55px !important;
 }
 
-
 .about-paper {
   opacity: 0.4;
   transition: opacity 0.9s ease;
@@ -48,6 +47,15 @@ code {
 .about-paper:hover {
   transition: opacity 0.9s ease;
   opacity: 1;
+}
+.portfolio-img {
+  width: 100%;
+  transition: width 0.9s ease;
+}
+
+.portfolio-img:hover {
+  transition: width 0.9s ease;
+  width: 95%;
 }
 .m-9df02822{
   z-index: 9999999 !important;
