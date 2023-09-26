@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.animate-opacity {
+  opacity: 0.4;
+  transition: opacity 0.9s ease;
+}
+
+.animate-opacity:hover {
+  transition: opacity 0.9s ease;
+  opacity: 1;
+}
+
+.animate-nav {
+  width: 350px;
+  background-color: rgba(27, 27, 27, 0.9);
+  border: 2px groove white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 16px;
+  transition: width 0.9s ease;
+}
+.animate-nav:hover {
+  width: 370px;
+  transition: width 0.9s ease;
+}
+.about-title{
+  font-size: 55px !important;
+}
+
+
+.about-paper {
+  opacity: 0.4;
+  transition: opacity 0.9s ease;
+}
+
+.about-paper:hover {
+  transition: opacity 0.9s ease;
+  opacity: 1;
+}
+.m-9df02822{
+  z-index: 9999999 !important;
+  position: relative;
+}
+@media (max-width: 691.98px){
+  .about-title{
+    font-size: 25px !important;
+  }
+  .about-container{
+    padding: 0;
+  }
+}

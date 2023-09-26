@@ -1,0 +1,80 @@
+.wrapper {
+	display: flex;
+	padding: rem(4px);
+	border: 0;
+
+	@media (max-width: 691.98px) {
+		flex-direction: column-reverse !important;
+		width: 90vw;
+		padding: rem(4px);
+	}
+}
+
+.form {
+	flex: 1;
+	padding: var(--mantine-spacing-xl);
+	padding-left: calc(var(--mantine-spacing-xl));
+	border-left: 0;
+
+	@media (max-width: 691.98px) {
+		padding: var(--mantine-spacing-md);
+		padding-left: var(--mantine-spacing-md);
+	}
+}
+
+.fields {
+	margin-top: rem(-12px);
+}
+
+.fieldInput {
+	flex: 1;
+
+	& + & {
+		margin-left: var(--mantine-spacing-md);
+
+		@media (max-width: 691.98px) {
+			margin-left: 0;
+			margin-top: var(--mantine-spacing-md);
+		}
+	}
+}
+
+.fieldsGroup {
+	display: flex;
+
+	@media (max-width: 691.98px) {
+		flex-direction: column;
+	}
+}
+
+.contacts {
+	box-sizing: border-box;
+	position: relative;
+	border-radius: var(--mantine-radius-lg);
+	background-size: cover;
+	background-position: center;
+	border: 0;
+	padding: var(--mantine-spacing-xl);
+	flex: 0 0 rem(280px);
+
+	@media (max-width:691.98px) {
+		margin-bottom: 80px;
+		padding-left: var(--mantine-spacing-md);
+	}
+}
+
+.title {
+	margin-bottom: 50px !important;
+	font-size: 35px !important;
+
+	@media (max-width: 691.98px) {
+		margin-bottom: 40px !important;
+		font-size: 25px !important;
+	}
+}
+
+.control {
+	@media (max-width: 691.98px) {
+		flex: 1;
+	}
+}
