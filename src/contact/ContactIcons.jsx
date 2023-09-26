@@ -1,5 +1,5 @@
 import { Text, Box, Stack, rem } from "@mantine/core";
-import { IconPhone, IconMapPin, IconAt, IconGitMerge } from "@tabler/icons-react";
+import { IconPhone, IconMapPin, IconAt, IconGitMerge, IconBrandTwitter, IconBrandGithub } from "@tabler/icons-react";
 import classes from "./ContactIcons.module.css";
 
 function ContactIcon({ icon: Icon, title, description, ...others }) {
@@ -44,10 +44,26 @@ const MOCKDATA = [
 
                 }}
 			>
-				Github Link
+				Github
 			</a>
 		),
-		icon: IconGitMerge,
+		icon: IconBrandGithub,
+	},
+	{
+		title: "Github",
+		description: (
+			<a
+				href="https://twitter.com/taiwo_shalom"
+				target="_blank" rel="noreferrer"
+                style={{
+                    color:"lightblue",
+
+                }}
+			>
+				Twitter
+			</a>
+		),
+		icon: IconBrandTwitter,
 	},
 ];
 
