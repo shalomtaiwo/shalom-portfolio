@@ -51,10 +51,20 @@
   },
   "overrides": {
     "@mantine/modals": {
-      "@mantine/core": "^7.0.1"
+      "@mantine/core": "^7.0.1",
+      "@mantine/hooks": "^7.0.1",
+      "@mantine/carousel": "^7.0.1",
+      "@mantine/form": "^7.0.1",
+      "@mantine/code-highlight": "^7.0.1",
+      "@mantine/dates": "^7.0.1"
     },
     "@mantine/notifications": {
-      "@mantine/core": "^7.0.1"
+      "@mantine/core": "^7.0.1",
+      "@mantine/hooks": "^7.0.1",
+      "@mantine/carousel": "^7.0.1",
+      "@mantine/form": "^7.0.1",
+      "@mantine/code-highlight": "^7.0.1",
+      "@mantine/dates": "^7.0.1"
     }
   },
   "devDependencies": {
