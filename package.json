@@ -49,6 +49,14 @@
       "last 1 safari version"
     ]
   },
+  "overrides": {
+    "@mantine/modals": {
+      "@mantine/core": "^7.0.1"
+    },
+    "@mantine/notifications": {
+      "@mantine/core": "^7.0.1"
+    }
+  },
   "devDependencies": {
     "postcss": "^8.4.30",
     "postcss-preset-mantine": "^1.7.0",
