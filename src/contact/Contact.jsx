@@ -19,6 +19,7 @@ import { modals } from "@mantine/modals";
 
 export function Contact() {
 	const [captcha, setCaptcha] = useState("");
+    const [loading, setLoading] = useState(false);
 
 	const schema = z.object({
 		name: z.string().min(2, { message: "Name should have at least 2 letters" }),
@@ -46,7 +47,9 @@ export function Contact() {
 	}
 
 	const handleSendMessage = (name, email, message) => {
-		axios
+        setLoading(true)
+		try {
+            axios
 			.post("https://getform.io/f/4c633db8-e254-4aad-8d31-938a78bad708", {
 				name: name,
 				email: email,
@@ -64,10 +67,23 @@ export function Contact() {
 					subject: "",
 					message: "",
 				});
+                setLoading(false)
 			})
-			.catch(function (response) {
-				console.error(response);
+			.catch(function () {
+				// console.error(response);
+                modals.open({
+                    title: "Message not sent!",
+                    children: "Please try again...",
+                });
+                setLoading(false)
 			});
+        } catch (error) {
+            modals.open({
+                title: "Message not sent!",
+                children: "Please try again...",
+            });
+            setLoading(false)
+        }
 	};
 
 	return (
@@ -156,10 +172,14 @@ export function Contact() {
 									<ReCAPTCHA
 										sitekey="6LefPQMdAAAAAOD0VwKvCsSdLNs9rIrmR-EWCJDk"
 										onChange={onChange}
+                                        theme="dark"
+                                        onExpired={()=>setCaptcha('')}
 									/>
 									<Button
 										type="submit"
 										className={classes.control}
+                                        loading={loading}
+                                        disabled={captcha ? false : true}
 									>
 										Send message
 									</Button>
