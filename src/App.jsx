@@ -1,7 +1,6 @@
 import { MantineProvider, createTheme } from "@mantine/core";
 import Router from "./Routes";
 import AnimatedCursor from "react-animated-cursor";
-import { useState } from "react";
 import { ModalsProvider } from "@mantine/modals";
 
 const theme = createTheme({
@@ -9,7 +8,6 @@ const theme = createTheme({
 });
 
 function App() {
-	const [loading, setLoading] = useState(false);
 
 	return (
 		<MantineProvider
@@ -17,7 +15,7 @@ function App() {
 			theme={theme}
 		>
 			<ModalsProvider>
-				{loading ? <div>Loading</div> : <Router />}
+				<Router />
 			</ModalsProvider>
 			<AnimatedCursor />
 		</MantineProvider>
