@@ -22,7 +22,7 @@ const Skills = [
 	{ title: "PHP", src: IconPhp, color: "indigo" },
 	{ title: "HTML5", src: IconHtml, color: "blue" },
 	{ title: "CSS", src: IconCss, color: "green" },
-	{ title: "JavaScripts", src: IconJS, color: "teal" },
+	{ title: "JavaScript", src: IconJS, color: "teal" },
 	{ title: "NextJS", src: IconNext, color: "cyan" },
 	{ title: "WordPress", src: IconWordPress, color: "pink" },
 	{ title: "NodeJS", src: IconNodejs, color: "indigo" },
