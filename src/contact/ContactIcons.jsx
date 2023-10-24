@@ -26,7 +26,7 @@ function ContactIcon({ icon: Icon, title, description, ...others }) {
 }
 
 const MOCKDATA = [
-	{ title: "Email", description: "info@shalomt.com", icon: IconAt },
+	{ title: "Email", description: "tshalom01@gmail.com", icon: IconAt },
 	{ title: "Phone", description: "+27************", icon: IconPhone },
 	{
 		title: "Address",
