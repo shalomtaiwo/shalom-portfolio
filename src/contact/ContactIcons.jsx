@@ -50,7 +50,7 @@ const MOCKDATA = [
 		icon: IconBrandGithub,
 	},
 	{
-		title: "Github",
+		title: "Twitter",
 		description: (
 			<a
 				href="https://twitter.com/taiwo_shalom"

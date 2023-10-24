@@ -35,6 +35,11 @@ code {
   width: 370px;
   transition: width 0.9s ease;
 }
+.animate-nav a.active{
+  color: white;
+  opacity: 1;
+  transition: opacity 0.9s ease;
+}
 .about-title{
   font-size: 55px !important;
 }
